@@ -54,6 +54,7 @@ export default () => {
             <Subtitle>I love GraphQL</Subtitle>
           </Header>
           {loading && <Loading>Loading...</Loading>}
+          {!loading && data.movies && data.movies.map(m => <Movie key={m.id} id={m.id} />)}
         </Container>
       );
 };
