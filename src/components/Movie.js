@@ -23,5 +23,6 @@ export default ({ id, bg }) => (
     <Link to={`/${id}`}>
       <Poster bg={bg} />
     </Link>
+    <button>Like</button>
   </Container>
 );
